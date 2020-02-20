@@ -1,0 +1,18 @@
+<div class="grid">
+  <table>
+    <thead class="form-table-thead">
+      <tr   [style.height]="auto">
+        <th *ngFor="let item of this.header" [title]="item">
+          {{ item }}
+        </th>
+      </tr>
+    </thead>
+    <tbody class="form-table-tbody">
+      <tr *ngFor="let item of grid | async">
+        <td  *ngFor="let property of localUtil.generateArray(item)">
+           {{ property }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

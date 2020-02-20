@@ -1,0 +1,23 @@
+<div #message class="popup-box">
+	<mat-dialog-content>
+    <div class="flex-center-row">
+      <div>
+        <input />
+        <label></label>
+      </div>
+      <div>
+         
+      </div>
+    </div>
+	</mat-dialog-content>
+	<mat-dialog-actions align="center">
+		<div class="vertical-center">
+				<button mat-button class="close" (click)="OnClose()">
+					{{ 'Закрыть' }}
+				</button>
+				<button [mat-dialog-close] mat-button class="add">
+					{{ 'Добавить' }}
+				</button>
+		</div>
+	</mat-dialog-actions>
+</div>

@@ -1,0 +1,33 @@
+@import "variables.less";
+@import "mixins.less";
+
+.popup-box {
+  .i-warning-dialog {
+    fill: @c-warning-800;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .dialog-buttons();
+
+  .flex-center-row {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+  }
+
+  .mat-dialog-content {
+    white-space: pre-line;
+  }
+
+  .vertical-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  ws-hotkeys {
+    padding-bottom: 1px;
+  }
+}
